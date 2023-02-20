@@ -1,0 +1,42 @@
+.bg-img1 {
+  background-image: url(images/img-1.jpeg);
+  height: 60rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img2 {
+  background-image: url(images/img-2.jpeg);
+  height: 60rem;
+  background-size: cover;
+  background-position: center;
+}
+.bg-img3 {
+  background-image: url(images/img-3.jpeg);
+  height: 60rem;
+  background-size: cover;
+  background-position: center;
+}
+/*  */
+header:before {
+  content: "";
+  display: block;
+  height: 50px;
+}
+
+.showcase::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+iframe {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}

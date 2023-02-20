@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carousel</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+        <div class="container">
+          <a href="index.html" class="navbar-brand text-danger fw-bold"
+            >SH Mobile</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse collapse" id="navmenu">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active text-danger"
+                  >Trang chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://www.facebook.com/SHmobiile.vn"
+                  class="nav-link text-danger"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#company-info" class="nav-link text-danger"
+                  >Information</a
+                >
+              </li>
+            </ul>
+            <form action="" class="d-flex ms-auto">
+              <input
+                type="text"
+                class="form-control me-2"
+                placeholder="Search"
+              />
+              <button class="btn btn-outline-danger" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Carousel Slide -->
+      <section>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active bg-img1">
+              <div class="carousel-caption">
+                <h1>iPhone 14 Pro Max 128GB</h1>
+                <p>
+                  Máy mới, chưa qua sử dụng, chưa kích hoạt, lỗi 1 đổi 1 trong
+                  tháng đầu, bảo hành 1 năm máy mới tại SH Mobile
+                </p>
+                <a href="https://www.facebook.com/SHmobiile.vn" target="_blank">
+                  <button class="btn btn-primary btn-lg">
+                    Mua ngay hôm nay
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item bg-img2">
+              <div class="carousel-caption text-dark">
+                <h1>iPhone 12 Pro Max</h1>
+                <p>
+                  Máy mới 99%, đẹp keng, bảo hành 6 tháng lỗi 1 đổi 1 tại SH
+                  Mobile
+                </p>
+                <a href="https://www.facebook.com/SHmobiile.vn" target="_blank">
+                  <button class="btn btn-primary btn-lg">
+                    Mua ngay hôm nay
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item bg-img3">
+              <div class="carousel-caption">
+                <a href="https://www.facebook.com/SHmobiile.vn" target="_blank">
+                  <button class="btn btn-primary btn-lg">
+                    Mua ngay hôm nay
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!-- Indicators -->
+
+            <div class="carousel-indicators">
+              <button
+                class="active"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="0"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="1"
+              ></button
+              ><button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+
+            <!-- Prev,next -->
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-slide="next"
+              data-bs-target="#myCarousel"
+            >
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-slide="prev"
+              data-bs-target="#myCarousel"
+            >
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTENT---------------------------------------------------->
+
+      <!-- Showcase -->
+      <section
+        class="showcase text-light p-5 pt-lg-5 text-center text-sm-start"
+      >
+        <div class="container">
+          <!-- d-sm-flex: display-small-flex (sm  ≥576px) , lớn hơn 576px sẽ tách ra theo kiểu flex, 
+    mặc định là chồng lên nhau -->
+          <div
+            class="d-sm-flex align-items-center justify-content-between text-dark"
+          >
+            <div>
+              <h1>
+                Cơ hội trở thành
+                <span class="text-warning">Khách hàng Vip của SH Mobile</span>
+              </h1>
+              <p class="lead my-4">
+                <!-- lead: font-size phông chữ sẽ lớn hơn chút -->
+                Sale từ 4.000¥ cho đến 6.000¥ cho mỗi sản phẩm khi khách hàng
+                mua từ máy thứ 2 trở đi.
+              </p>
+              <!-- Modal là 1 thành phần cần thiết trong thiết kế Web dùng để hiển thị popup, video và hình ảnh... -->
+              <button
+                class="btn btn-primary btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#enroll"
+              >
+                Đăng ký
+              </button>
+            </div>
+            <!-- d-none: nghĩa là display none -->
+            <!-- img-fluid: làm cho ảnh img nằm gọn trong container -->
+            <img
+              class="img-fluid w-50 d-none d-sm-block"
+              src="img/showcase.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <!-- <section class="bg-primary text-light p-5">
+        <div class="container">
+          <div class="d-md-flex align-items-center justify-content-between">
+            <h3>Nhận thông tin mới nhất (Beta)</h3>
+
+            <div class="input-group news-input">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nhập Email"
+              />
+              <button class="btn btn-dark btn-lg" type="button">Button</button>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Boxes -->
+      <section class="p-5">
+        <div class="container">
+          <div class="row text-center g-4">
+            <div class="col-md">
+              <div class="card bg-dark text-light">
+                <div class="card-body">
+                  <div class="h1 mb-3">
+                    <i class="bi bi-person-heart"></i>
+                  </div>
+                  <h3 class="card-title mb-3">Uy tín</h3>
+                  <p class="card-text">
+                    Bán sản phẩm đúng như hướng dẫn, giao dịch nhanh chóng!
+                  </p>
+                  <a
+                    href="https://www.facebook.com/SHmobiile.vn"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >Đọc thêm</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card bg-secondary text-light">
+                <div class="card-body">
+                  <div class="h1 mb-3">
+                    <i class="bi bi-award"></i>
+                  </div>
+                  <h3 class="card-title mb-3">Chất lượng</h3>
+                  <p class="card-text">
+                    Máy zin đẹp, kiểm tra máy trước khi giao hàng, chế độ bảo
+                    hành tốt!
+                  </p>
+                  <a
+                    href="https://www.facebook.com/SHmobiile.vn"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >Đọc thêm</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card bg-dark text-light">
+                <div class="card-body">
+                  <div class="h1 mb-3">
+                    <i class="bi bi-cash-coin"></i>
+                  </div>
+                  <h3 class="card-title mb-3">Giá cạnh tranh</h3>
+                  <p class="card-text">
+                    Giảm giá shock vào livestream mỗi tối trên các kênh của SH
+                    Mobile
+                  </p>
+                  <a
+                    href="https://www.facebook.com/SHmobiile.vn"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >Đọc thêm</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Company-info -->
+      <section id="company-info" class="p-5 bg-dark text-light">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+              <img src="img/companyinfo.svg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-md p-5">
+              <h2>Về hệ thống công ty</h2>
+              <p class="lead">
+                Chúng mình đang mở rộng các đại lý ở các vùng miền.
+              </p>
+              <p>
+                Chúng mình đang mở rộng các đại lý ở các vùng miền để có thể đến
+                gần khách hàng hơn, hỗ trợ tốt nhất, nhanh nhất cho khách hàng
+                của mình. Hiện tại công ty chúng mình đang có 1 trụ sở chính là:
+                SH Mobile Shop ngay ga Shimousanakayama (下総中山駅) thuộc tỉnh
+                Chiba Nhật Bản, để có thể phục vụ nhanh nhất đến khách hàng của
+                mình.
+              </p>
+              <a
+                href="https://www.facebook.com/SHmobiile.vn"
+                class="btn btn-light mt-3"
+                target="_blank"
+                ><i class="bi bi-chevron-right"></i>Đọc thêm</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="company-info" class="p-5 text-dark">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+              <h2>Đối tác chính thức</h2>
+              <p class="lead">
+                Gửi hàng nhanh chóng qua hệ thống "Vận chuyển Bưu điện Nhật Bản"
+                chuẩn quốc gia.
+              </p>
+              <p>
+                Cam kết vận chuyển nhanh nhất, rẻ nhất, an toàn nhất. Hỗ trợ gửi
+                đồ cho khách hàng vào đúng thời gian muốn hẹn, cập nhật tình
+                hình vận chuyển sớm nhất qua hệ thống website chính thức của Bưu
+                điện Nhật Bản
+              </p>
+              <a
+                href="https://www.facebook.com/SHmobiile.vn"
+                class="btn btn-dark mt-3"
+                target="_blank"
+                ><i class="bi bi-chevron-right"></i>Đọc thêm</a
+              >
+            </div>
+            <div class="col-md">
+              <img src="img/post-link.svg" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Questions Accordion -->
+
+      <section id="questions" class="p-5 bg-dark text-light">
+        <div class="container">
+          <h2 class="text-center mb-4">Câu hỏi thường gặp</h2>
+          <div class="accordion accordion-flush" id="questions">
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-one"
+                >
+                  Địa chỉ cửa hàng ở đâu ạ?
+                </button>
+              </h2>
+              <div
+                id="question-one"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  Ngay ga Shimousanakayama (下総中山駅) đi bộ 3 phút, cửa hàng
+                  tại tỉnh Chiba Nhật Bản. Xem thêm chi tiết
+                  <span
+                    ><a href="#contact" class="text-decoration-none"
+                      >tại đây</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-two"
+                >
+                  Cửa hàng mình bán máy iPhone mới hay máy iPhone cũ?
+                </button>
+              </h2>
+              <div
+                id="question-two"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  SH Mobile bán cả máy cũ và máy mới ạ! (Có cả máy mới đập hộp
+                  theo lượng tồn kho)
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-three"
+                >
+                  Cửa hàng có bán máy điện thoại Samsung không?
+                </button>
+              </h2>
+              <div
+                id="question-three"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  SH Mobile chuyên về sản phẩm iPhone, iPad, Macbook những sản
+                  phẩm đã qua sử dụng và sản phẩm mới!
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-four"
+                >
+                  Có hỗ trợ gửi về Việt Nam không?
+                </button>
+              </h2>
+              <div
+                id="question-four"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  Có hỗ trợ gửi về Việt Nam, với điều kiện khách hàng chuyển
+                  toàn bộ phí trước cho cửa hàng (bao gồm tiền vận chuyển)
+                </div>
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-five"
+                >
+                  Mua hàng như thế nào?
+                </button>
+              </h2>
+              <div
+                id="question-five"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  Chuyển khoản trước vào tài khoản ngân hàng SH Mobile Shop sẽ
+                  được miễn phí vận chuyển. Nhận hàng trả tiền (Hình thức
+                  Daibiki) sẽ cộng thêm 1,500¥. Giao dịch tại FanPage
+                  <span
+                    ><a
+                      href="https://www.facebook.com/SHmobiile.vn"
+                      target="_blank"
+                      class="text-decoration-none"
+                      >SH Mobile</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Instructors -->
+      <section class="bg-primary p-5" id="instructors">
+        <div class="container">
+          <h2 class="text-center text-light">THÀNH VIÊN CÔNG TY</h2>
+          <p class="lead text-center text-light mb-5">
+            Những gương mặt trẻ trung, ưu tú tràn đầy năng lượng tích cực, hãy
+            liên hệ với chúng tôi qua link facebook đính kèm dưới ảnh!
+          </p>
+
+          <div class="row g-4">
+            <!-- col: mặc định 12 col, chia nửa màn hình(item xếp đều nửa màn hình) là 6, chia đều 4 phần là 3... -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <!-- randomuser.me -->
+                  <!-- rounded-circle giống với border-radius: 100% -->
+                  <img
+                    src="avatar/alinh.jpeg"
+                    alt=""
+                    class="rounded-circle mb-3"
+                  />
+                  <div class="card-title mb-3">
+                    <a href="#doanvanlinh" class="text-decoration-none"
+                      >Đoàn Văn Linh</a
+                    >
+                  </div>
+                  <div class="card-text mb-3">
+                    Chủ tịch hội đồng quản trị kiêm người sáng lập công ty!
+                  </div>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100086199519088"
+                    target="_blank"
+                    class="i bi bi-facebook text-dark mx-1"
+                    id="doanvanlinh"
+                  ></a>
+                  <a href="" class="i bi bi-twitter text-dark mx-1"></a>
+                  <a href="" class="i bi bi-instagram text-dark mx-1"></a>
+                  <a href="" class="i bi bi-linkedin text-dark mx-1"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img
+                    src="avatar/hoangbanggia.jpeg"
+                    alt=""
+                    class="rounded-circle mb-3"
+                  />
+                  <div class="card-title mb-3">
+                    <a href="#doanvanhoang" class="text-decoration-none"
+                      >Đoàn Văn Hoàng</a
+                    >
+                  </div>
+                  <div class="card-text mb-3">
+                    Trưởng phòng kỹ thuật cao kiêm chuyên viên tư vấn!
+                  </div>
+                  <a
+                    href="https://www.facebook.com/hoang201192"
+                    target="_blank"
+                    class="i bi bi-facebook text-dark mx-1"
+                    id="doanvanhoang"
+                  ></a>
+                  <a href="#" class="i bi bi-twitter text-dark mx-1"></a>
+                  <a href="#" class="i bi bi-instagram text-dark mx-1"></a>
+                  <a href="#" class="i bi bi-linkedin text-dark mx-1"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img
+                    src="avatar/sangtocdo.jpeg"
+                    alt=""
+                    class="rounded-circle mb-3"
+                  />
+                  <div class="card-title mb-3">
+                    <a href="#phamquangsang" class="text-decoration-none">
+                      Phạm Quang Sáng</a
+                    >
+                  </div>
+                  <div class="card-text mb-3">
+                    Trưởng phòng kinh doanh kiêm chuyên gia dự đoán thị trường!
+                  </div>
+                  <a
+                    href="https://www.facebook.com/apple.quangsang"
+                    target="_blank"
+                    class="i bi bi-facebook text-dark mx-1"
+                    id="#phamquangsang"
+                  ></a>
+                  <a href="#" class="i bi bi-twitter text-dark mx-1"></a>
+                  <a href="#" class="i bi bi-instagram text-dark mx-1"></a>
+                  <a href="#" class="i bi bi-linkedin text-dark mx-1"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img
+                    src="avatar/uyen.jpeg"
+                    alt=""
+                    class="rounded-circle mb-3"
+                  />
+                  <div class="card-title mb-3">
+                    <a href="#uyen" class="text-decoration-none"
+                      >Trịnh Thu Uyên</a
+                    >
+                  </div>
+                  <div class="card-text mb-3">
+                    Trường phòng Sale, kiêm trợ lý cấp cao, chuyên viên mở rộng
+                    thị trường!
+                  </div>
+                  <a
+                    href="https://www.facebook.com/uyeneng.3042000"
+                    target="_blank"
+                    class="i bi bi-facebook text-dark mx-1"
+                    id="uyen"
+                  ></a>
+                  <a href="#" class="i bi bi-twitter text-dark mx-1"></a>
+                  <a href="#" class="i bi bi-instagram text-dark mx-1"></a>
+                  <a href="#" class="i bi bi-linkedin text-dark mx-1"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact and Map -->
+
+      <section class="p-5" id="contact">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md">
+              <h2 class="text-center mb-4">Thông tin liên lạc</h2>
+              <!-- list-group-flush to remove some borders and rounded corners 
+              to render list group items edge-to-edge in a parent container -->
+              <ul class="list-group list-group-flush lead">
+                <!-- list-group-item: bỏ dấu chấm đầu list -->
+                <li class="list-group-item">
+                  <span class="fw-bold">Tên công ty: </span>合同会社 BH MOBILE
+                </li>
+                <li class="list-group-item">
+                  <!-- fw-bold: font-weight: bold; -->
+                  <span class="fw-bold">Địa chỉ: </span> &#12306; 273-0035
+                  千葉県船橋市本中山１−８ー５北海ビル２０２
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Phone: </span>080-8887-4879
+                </li>
+
+                <li class="list-group-item">
+                  <span class="fw-bold">Email: </span>shmobile@gmail.com
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1180.236796241455!2d139.94433571825468!3d35.71547083526047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601880d72ed466b7%3A0x6ef2911085d3dab6!2sKurukuru!5e0!3m2!1sen!2sjp!4v1676900643594!5m2!1sen!2sjp"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="p-5 text-center text-light bg-dark position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2023 SH Mobile</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="enrollLabel">
+              Đăng ký thông tin (Beta_Chưa thể sử dụng)
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">
+              Hãy điền thông tin vào Form và chúng tôi sẽ quay trở lại với bạn
+            </p>
+            <form>
+              <label for="first-name" class="mb-3 col-form-label">
+                First Name:
+              </label>
+              <input type="text" class="form-control" id="firstname" />
+            </form>
+            <form>
+              <label for="last-name" class="mb-3 col-form-label">
+                Last Name:
+              </label>
+              <input type="text" class="form-control" id="last-name" />
+            </form>
+            <form>
+              <label for="email" class="mb-3 col-form-label"> Email: </label>
+              <input type="text" class="form-control" id="email" />
+            </form>
+            <form>
+              <label for="phone" class="mb-3 col-form-label"> Phone: </label>
+              <input type="text" class="form-control" id="phone" />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Đóng
+            </button>
+            <button type="button" class="btn btn-primary">Lưu thay đổi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bundle: Bootstrap Javascript plugin -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
