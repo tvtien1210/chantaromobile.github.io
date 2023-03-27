@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SH Mobile Shop</title>
+    <!-- Vendor CSS Files aos animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- ----------- -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,6 +20,7 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <!-- -------------- -->
   </head>
 
   <body>
@@ -38,12 +42,20 @@
 
           <div class="navbar-collapse collapse" id="navmenu">
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <li
+                class="nav-item"
+                data-aos="zoom-in-right"
+                data-aos-duration="1000"
+              >
                 <a href="index.html" class="nav-link active text-danger"
                   >Trang chủ</a
                 >
               </li>
-              <li class="nav-item">
+              <li
+                class="nav-item"
+                data-aos="zoom-in-right"
+                data-aos-duration="1000"
+              >
                 <a
                   href="https://www.facebook.com/SHmobiile.vn"
                   class="nav-link text-danger"
@@ -51,13 +63,22 @@
                   >Facebook</a
                 >
               </li>
-              <li class="nav-item">
+              <li
+                class="nav-item"
+                data-aos="zoom-in-right"
+                data-aos-duration="1000"
+              >
                 <a href="#company-info" class="nav-link text-danger"
                   >Thông tin</a
                 >
               </li>
             </ul>
-            <form action="" class="d-flex ms-auto">
+            <form
+              action=""
+              class="d-flex ms-auto"
+              data-aos="zoom-in-right"
+              data-aos-duration="1000"
+            >
               <input
                 type="text"
                 class="form-control me-2"
@@ -82,7 +103,13 @@
         >
           <div class="carousel-inner">
             <div class="carousel-item active bg-img1">
-              <div class="carousel-caption text-start">
+              <div
+                class="carousel-caption text-start"
+                data-aos="zoom-in-right"
+                data-aos-duration="1000"
+              >
+                <!-- data-aos-delay="200": sau 200ms chữ mới hiển thị -->
+                <!-- data-aos-duration="1000": tốc độ hiển thị trong 1000ms=1s -->
                 <h2>UY TÍN - CHẤT LƯỢNG -GIÁ CẢ CẠNH TRANH</h2>
 
                 <a href="https://www.facebook.com/SHmobiile.vn" target="_blank">
@@ -93,7 +120,11 @@
               </div>
             </div>
             <div class="carousel-item bg-img2">
-              <div class="carousel-caption">
+              <div
+                class="carousel-caption"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
                 <h1>iPhone 14 Pro Max 128GB</h1>
                 <p>
                   Máy mới, chưa qua sử dụng, chưa kích hoạt, lỗi 1 đổi 1 trong
@@ -107,7 +138,11 @@
               </div>
             </div>
             <div class="carousel-item bg-img3">
-              <div class="carousel-caption text-dark text-end">
+              <div
+                class="carousel-caption text-dark text-end"
+                data-aos="zoom-in-left"
+                data-aos-duration="1000"
+              >
                 <h1>iPhone 12 Pro Max</h1>
                 <p>
                   Máy mới 99%, đẹp keng, bảo hành 6 tháng lỗi 1 đổi 1 tại SH
@@ -177,7 +212,7 @@
           <div
             class="d-sm-flex align-items-center justify-content-between text-dark"
           >
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1000">
               <h1>
                 Cơ hội trở thành
                 <span class="text-warning"
@@ -191,7 +226,8 @@
                 khách vui lòng nhắn tin trực tiếp qua
                 <a
                   href="https://www.facebook.com/SHmobiile.vn"
-                  class="text-decoration-none" target="_blank"
+                  class="text-decoration-none"
+                  target="_blank"
                   >SH Mobile FanPage</a
                 >
                 với từ khoá
@@ -206,7 +242,8 @@
               <botton typw="button" class="btn btn-primary btn-lg">
                 <a
                   href="https://www.facebook.com/SHmobiile.vn"
-                  class="text-light text-decoration-none" target="_blank"
+                  class="text-light text-decoration-none"
+                  target="_blank"
                   >Truy cập ngay SH Mobile FanPage</a
                 >
               </botton>
@@ -222,6 +259,9 @@
             <!-- d-none: display none -->
             <!-- img-fluid: ảnh img nằm gọn trong container -->
             <img
+              data-aos="fade-left"
+              data-aos-delay="200"
+              data-aos-duration="1000"
               class="img-fluid w-50 d-none d-sm-block"
               src="img/showcase.svg"
               alt=""
@@ -230,13 +270,16 @@
         </div>
       </section>
 
-
       <!-- Boxes -->
       <section class="p-5">
         <div class="container">
           <div class="row text-center g-4">
             <div class="col-md position-relative">
-              <div class="card bg-dark text-light h-100">
+              <div
+                class="card bg-dark text-light h-100"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
                 <div class="card-body">
                   <div class="h1 mb-3">
                     <i class="bi bi-person-heart"></i>
@@ -255,7 +298,11 @@
               </div>
             </div>
             <div class="col-md">
-              <div class="card bg-secondary text-light h-100">
+              <div
+                class="card bg-secondary text-light h-100"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
                 <div class="card-body">
                   <div class="h1 mb-3">
                     <i class="bi bi-award"></i>
@@ -275,7 +322,11 @@
               </div>
             </div>
             <div class="col-md">
-              <div class="card bg-dark text-light h-100">
+              <div
+                class="card bg-dark text-light h-100"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
                 <div class="card-body">
                   <div class="h1 mb-3">
                     <i class="bi bi-cash-coin"></i>
@@ -302,10 +353,10 @@
       <section id="company-info" class="p-5 bg-dark text-light">
         <div class="container">
           <div class="row align-items-center justify-content-between">
-            <div class="col-md">
+            <div class="col-md" data-aos="zoom-in" data-aos-duration="1000">
               <img src="img/companyinfo.svg" alt="" class="img-fluid" />
             </div>
-            <div class="col-md p-5">
+            <div class="col-md p-5" data-aos="zoom-in" data-aos-duration="1000">
               <h2>Về hệ thống công ty</h2>
               <p class="lead">
                 Công ty đang mở rộng các đại lý ở các vùng miền.
@@ -330,7 +381,7 @@
       <section id="company-info" class="p-5 text-dark">
         <div class="container">
           <div class="row align-items-center justify-content-between">
-            <div class="col-md p-5">
+            <div class="col-md p-5" data-aos="zoom-in" data-aos-duration="1000">
               <h2>Đối tác chính thức</h2>
               <p class="lead">
                 Gửi hàng nhanh chóng qua hệ thống "Vận chuyển Bưu điện Nhật Bản"
@@ -349,7 +400,7 @@
                 ><i class="bi bi-chevron-right"></i>Đọc thêm</a
               >
             </div>
-            <div class="col-md">
+            <div class="col-md" data-aos="zoom-in" data-aos-duration="1000">
               <img src="img/post-link.svg" alt="" class="img-fluid ps-5" />
             </div>
           </div>
@@ -360,8 +411,19 @@
 
       <section id="questions" class="p-5 bg-dark text-light">
         <div class="container">
-          <h2 class="text-center mb-4">Câu hỏi thường gặp</h2>
-          <div class="accordion accordion-flush" id="questions">
+          <h2
+            class="text-center mb-4"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+          >
+            Câu hỏi thường gặp
+          </h2>
+          <div
+            class="accordion accordion-flush"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+            id="questions"
+          >
             <!-- Item 1 -->
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -412,83 +474,82 @@
                   một số dòng máy mới đập hộp.
                 </div>
               </div>
-              </div>
-              <!-- Item 3 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#question-three"
-                  >
-                    Cửa hàng có bán máy điện thoại Samsung không?
-                  </button>
-                </h2>
-                <div
-                  id="question-three"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#questions"
+            </div>
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-three"
                 >
-                  <div class="accordion-body">
-                    SH Mobile chuyên về sản phẩm iPhone, iPad, Macbook những sản
-                    phẩm đã qua sử dụng và sản phẩm mới.
-                  </div>
+                  Cửa hàng có bán máy điện thoại Samsung không?
+                </button>
+              </h2>
+              <div
+                id="question-three"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  SH Mobile chuyên về sản phẩm iPhone, iPad, Macbook những sản
+                  phẩm đã qua sử dụng và sản phẩm mới.
                 </div>
               </div>
-              <!-- Item 4 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#question-four"
-                  >
-                    Có hỗ trợ gửi về Việt Nam không?
-                  </button>
-                </h2>
-                <div
-                  id="question-four"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#questions"
+            </div>
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-four"
                 >
-                  <div class="accordion-body">
-                    Có hỗ trợ gửi về Việt Nam, với điều kiện khách hàng chuyển
-                    toàn bộ phí trước cho cửa hàng (bao gồm tiền vận chuyển).
-                  </div>
+                  Có hỗ trợ gửi về Việt Nam không?
+                </button>
+              </h2>
+              <div
+                id="question-four"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  Có hỗ trợ gửi về Việt Nam, với điều kiện khách hàng chuyển
+                  toàn bộ phí trước cho cửa hàng (bao gồm tiền vận chuyển).
                 </div>
               </div>
-              <!-- Item 5 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#question-five"
-                  >
-                    Mua hàng như thế nào?
-                  </button>
-                </h2>
-                <div
-                  id="question-five"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#questions"
+            </div>
+            <!-- Item 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-five"
                 >
-                  <div class="accordion-body">
-                    Chuyển khoản trước vào tài khoản ngân hàng SH Mobile Shop sẽ
-                    được miễn phí vận chuyển. Nhận hàng trả tiền (Hình thức
-                    Daibiki) sẽ cộng thêm 1,500¥. Giao dịch tại FanPage
-                    <span
-                      ><a
-                        href="https://www.facebook.com/SHmobiile.vn"
-                        target="_blank"
-                        class="text-decoration-none"
-                        >SH Mobile</a
-                      ></span
-                    >.
-                  </div>
+                  Mua hàng như thế nào?
+                </button>
+              </h2>
+              <div
+                id="question-five"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  Chuyển khoản trước vào tài khoản ngân hàng SH Mobile Shop sẽ
+                  được miễn phí vận chuyển. Nhận hàng trả tiền (Hình thức
+                  Daibiki) sẽ cộng thêm 1,500¥. Giao dịch tại FanPage
+                  <span
+                    ><a
+                      href="https://www.facebook.com/SHmobiile.vn"
+                      target="_blank"
+                      class="text-decoration-none"
+                      >SH Mobile</a
+                    ></span
+                  >.
                 </div>
               </div>
             </div>
@@ -499,15 +560,29 @@
       <!-- Members -->
       <section class="bg-primary p-5" id="instructors">
         <div class="container">
-          <h2 class="text-center text-light">THÀNH VIÊN CÔNG TY</h2>
-          <p class="lead text-center text-light mb-5">
+          <h2
+            class="text-center text-light"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
+            THÀNH VIÊN CÔNG TY
+          </h2>
+          <p
+            class="lead text-center text-light mb-5"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
             Những gương mặt trẻ trung, ưu tú tràn đầy năng lượng tích cực, hãy
             liên hệ với chúng tôi qua link facebook đính kèm dưới ảnh!
           </p>
 
           <div class="row g-4">
             <!-- col: mặc định 12 col, chia nửa màn hình(item xếp đều nửa màn hình) là 6, chia đều 4 phần là 3... -->
-            <div class="col-md-6 col-lg-3">
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               <div class="card bg-light h-100">
                 <div class="card-body text-center">
                   <!-- randomuser.me -->
@@ -525,7 +600,8 @@
                     >
                   </div>
                   <div class="card-text mb-3">
-                    Chủ tịch công ty, kiêm giám đốc điều hành, giám đốc tài chính!
+                    Chủ tịch công ty, kiêm giám đốc điều hành, giám đốc tài
+                    chính!
                   </div>
                   <a
                     href="https://www.facebook.com/profile.php?id=100086199519088"
@@ -540,7 +616,11 @@
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-3">
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               <div class="card bg-light h-100">
                 <div class="card-body text-center">
                   <img
@@ -571,7 +651,11 @@
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-3">
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               <div class="card bg-light h-100">
                 <div class="card-body text-center">
                   <img
@@ -603,7 +687,11 @@
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-3">
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
               <div class="card bg-light h-100">
                 <div class="card-body text-center">
                   <img
@@ -642,7 +730,7 @@
       <section class="p-5" id="contact">
         <div class="container">
           <div class="row g-4">
-            <div class="col-md">
+            <div class="col-md" data-aos="fade-up" data-aos-duration="3000">
               <h2 class="text-center mb-4">Thông tin liên lạc</h2>
               <!-- list-group-flush to remove some borders and rounded corners 
               to render list group items edge-to-edge in a parent container -->
@@ -666,7 +754,12 @@
               </ul>
             </div>
 
-            <div class="map col-md">
+            <div
+              class="map col-md"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1180.236796241455!2d139.94433571825468!3d35.71547083526047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601880d72ed466b7%3A0x6ef2911085d3dab6!2sKurukuru!5e0!3m2!1sen!2sjp!4v1676900643594!5m2!1sen!2sjp"
                 style="border: 0"
@@ -763,5 +856,10 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <!-- Vendor JS Files -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
