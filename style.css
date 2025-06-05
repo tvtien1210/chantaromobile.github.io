@@ -1,19 +1,19 @@
 .bg-img1 {
   background-image: url(images/img-1.jpeg);
-  height: 55rem;
+  height: 57rem;
   background-size: cover;
   background-position: center;
 }
 
 .bg-img2 {
   background-image: url(images/img-2.jpeg);
-  height: 55rem;
+  height: 57rem;
   background-size: cover;
   background-position: center;
 }
 .bg-img3 {
   background-image: url(images/img-3.jpeg);
-  height: 55rem;
+  height: 57rem;
   background-size: cover;
   background-position: center;
 }
